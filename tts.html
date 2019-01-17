@@ -1,0 +1,28 @@
+<html>
+<header> 
+
+<script type = "text/javascript">
+   function tts() 
+   {
+      var str = document.getElementById("ttstxt").value;
+      var s ='http://translate.google.com/translate_tts?ie=utf-8&client=tw-ob&tl=en&q=\"hi ' + str + ' how are you\"';
+      var audio = new Audio();
+      audio.src = s;
+      audio.play();
+   }
+</script>
+
+</header>
+<body>
+
+
+
+      <p>Enter your friends name(s) and click 'Say it!' button</p>      
+      <form>
+         Enter name(s): <input id="ttstxt" type="text" name="ttstxt"><br>
+         <input type = "button" onclick = "tts()" value = "Say it!">
+      </form>      
+      <p>Enter different names and then try again</p>
+
+</body>
+</html>
